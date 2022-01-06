@@ -13,7 +13,7 @@ namespace SampleDocker.Configuration
     class Setup
     {
 
-		public static IWebDriver driver;
+        public static IWebDriver driver;
         public static ExtentReports extent;
         public static ExtentHtmlReporter htmlReporter;
         public static string testObjective;
@@ -53,8 +53,8 @@ namespace SampleDocker.Configuration
         [SetUp]
         public static void BeforeEachTest()
         {
-            driver = ConfigFile.Init("Configuration/AppSetting.json");
-            Constant.SetConfig("Configuration/AppSetting.json");
+            driver = ConfigFile.Init("Configuration\\AppSettings.json");
+            Constant.SetConfig("Configuration\\AppSettings.json");
         }
 
         [TearDown]
