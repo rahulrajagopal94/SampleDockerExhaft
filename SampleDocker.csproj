@@ -22,5 +22,9 @@
       <HintPath>bin\Debug\netcoreapp3.1\Ex-haft.dll</HintPath>
     </Reference>
   </ItemGroup>
-
+  <ItemGroup>
+     <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+  </ItemGroup>
 </Project>
