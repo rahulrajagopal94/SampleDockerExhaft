@@ -171,3 +171,4 @@ C:\Users\rahul.r\Desktop\SeleniumGrid\SampleDocker\SampleDocker\bin\Debug\netcor
 C:\Users\rahul.r\Desktop\SeleniumGrid\SampleDocker\SampleDocker\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.EventLog.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SampleDocker\SampleDocker\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SampleDocker\SampleDocker\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\Users\rahul.r\Desktop\SeleniumGrid\SampleDocker\SampleDocker\obj\Debug\netcoreapp3.1\SampleDocker.csproj.AssemblyReference.cache

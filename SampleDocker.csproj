@@ -20,7 +20,6 @@
     <PackageReference Include="RestSharp" Version="106.15.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="Ex-haft">
       <HintPath>bin\Debug\netcoreapp3.1\Ex-haft.dll</HintPath>
