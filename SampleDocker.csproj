@@ -3,12 +3,20 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <GenerateProgramFile>false</GenerateProgramFile>
-    <PublishChromeDriver>true</PublishChromeDriver>
-    <ApplicationIcon />
-    <StartupObject />
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration\Setup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Configuration\AppSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Configuration\Setup.cs" />
+  </ItemGroup>
 <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
@@ -28,5 +36,10 @@
     <Reference Include="Ex-haft">
       <HintPath>bin\Debug\netcoreapp3.1\Ex-haft.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\netcoreapp3.1\Configuration\AppSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 </Project>
