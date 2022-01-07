@@ -13,7 +13,7 @@ namespace SampleDocker.TestScript
         {
             testObjective = "To Verify that user is able to login to the web application.";
             scriptName = "8Login to Application";
-            testData = ConfigFile.RetrieveInputTestData("LoginTest.json");
+            testData = ConfigFile.RetrieveInputTestData("LoginTest8.json");
 
             if (ConfigFile.IsRunFromDriverFile())
                 VerifyLogin();
