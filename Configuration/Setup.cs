@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using OpenQA.Selenium;
 using Ex_haft.Configuration;
 using Ex_haft.Utilities;
+using System.IO;
 
 namespace SampleDocker.Configuration
 {
@@ -53,8 +54,8 @@ namespace SampleDocker.Configuration
         [SetUp]
         public static void BeforeEachTest()
         {
-            driver = ConfigFile.Init(@"Configuration/AppSettings.json");
-            Constant.SetConfig(@"Configuration/AppSettings.json");
+            driver = ConfigFile.Init(Path.Combine("Configuration", "AppSettings.json"));
+            Constant.SetConfig(Path.Combine("Configuration", "AppSettings.json"));
         }
 
         [TearDown]
