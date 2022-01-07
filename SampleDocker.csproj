@@ -24,4 +24,9 @@
       <HintPath>bin\Debug\netcoreapp3.1\Ex-haft.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+      <Content Include="Configuration\AppSettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+   </ItemGroup>
 </Project>
