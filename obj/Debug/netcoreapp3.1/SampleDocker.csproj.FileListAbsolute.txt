@@ -345,4 +345,4 @@ C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\bin\Debug\netco
 C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
 C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.csproj.CopyComplete
 C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.genruntimeconfig.cache
-C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\bin\Debug\netcoreapp3.1\Configuration\AppSettings.json
+C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.csproj.AssemblyReference.cache

@@ -53,8 +53,8 @@ namespace SampleDocker.Configuration
         [SetUp]
         public static void BeforeEachTest()
         {
-            driver = ConfigFile.Init("Configuration\\AppSettings.json");
-            Constant.SetConfig("Configuration\\AppSettings.json");
+            driver = ConfigFile.Init("Configuration\\appsettings.json");
+            Constant.SetConfig("Configuration\\appsettings.json");
         }
 
         [TearDown]

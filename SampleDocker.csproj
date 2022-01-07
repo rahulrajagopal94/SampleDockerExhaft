@@ -25,7 +25,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Update="bin/Debug/netcoreapp3.1/Configuration/AppSettings.json">
+    <Content Update="Configuration/appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
