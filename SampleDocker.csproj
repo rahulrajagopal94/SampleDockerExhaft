@@ -25,7 +25,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Configuration/AppSettings.json">
+    <Content Include="Configuration\\AppSettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </Content>
