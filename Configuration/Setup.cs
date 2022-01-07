@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using OpenQA.Selenium;
 using Ex_haft.Configuration;
 using Ex_haft.Utilities;
-using System.IO;
 
 namespace SampleDocker.Configuration
 {
@@ -40,25 +39,19 @@ namespace SampleDocker.Configuration
         {
             string testName = TestContext.CurrentContext.Test.Name;
             string reportPath = ConfigFile.GetAbsoluteFilePath("Results\\Report\\ExtentReport\\") + testName + "\\TestReport.html";
-
             extent = new ExtentReports();
             htmlReporter = new ExtentHtmlReporter(reportPath);
             htmlReporter.Config.DocumentTitle = "Automation Testing Report";
             htmlReporter.Config.ReportName = "Automation Testing";
             htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Standard;
-
             extent.AttachReporter(htmlReporter);
-
         }
 
         [SetUp]
         public static void BeforeEachTest()
         {
-            var root = @"Configuration/AppSettings.json";
-            var main = "";
-            var fullFileName = System.IO.Path.Combine(root, main);
-            driver = ConfigFile.Init(fullFileName);
-            Constant.SetConfig(fullFileName);
+            driver = ConfigFile.Init("Configuration//AppSettings.json");
+            Constant.SetConfig("Configuration//AppSettings.json");
         }
 
         [TearDown]
