@@ -26,7 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Update="Configuration/AppSettings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 </Project>
