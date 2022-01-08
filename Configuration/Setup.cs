@@ -7,6 +7,9 @@ using System.Collections.Generic;
 using OpenQA.Selenium;
 using Ex_haft.Configuration;
 using Ex_haft.Utilities;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
+using System;
 
 namespace SampleDocker.Configuration
 {
@@ -50,6 +53,9 @@ namespace SampleDocker.Configuration
         [SetUp]
         public static void BeforeEachTest()
         {
+            var options = new ChromeOptions();
+            var remoteUrl = "http://localhost:4444/wd/hub";
+            driver = new RemoteWebDriver(new Uri(remoteUrl), options);
             driver = ConfigFile.Init("Configuration/AppSettings.json");
             Constant.SetConfig("Configuration/AppSettings.json");
         }
