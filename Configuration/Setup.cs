@@ -41,7 +41,7 @@ namespace SampleDocker.Configuration
         public void ConfigureExtentReport()
         {
             string testName = TestContext.CurrentContext.Test.Name;
-            string reportPath = ConfigFile.GetAbsoluteFilePath("Results\\Report\\ExtentReport\\") + testName + "\\TestReport.html";
+            string reportPath = ConfigFile.GetAbsoluteFilePath("Results/Report/ExtentReport/") + testName + "/TestReport.html";
             extent = new ExtentReports();
             htmlReporter = new ExtentHtmlReporter(reportPath);
             htmlReporter.Config.DocumentTitle = "Automation Testing Report";
