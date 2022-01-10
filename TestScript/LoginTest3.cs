@@ -16,12 +16,12 @@ namespace SampleDocker.TestScript
             testData = ConfigFile.RetrieveInputTestData("LoginTest3.json");
 
             if (ConfigFile.IsRunFromDriverFile())
-                VerifyLogin();
+                VerifyLogin3();
         }
 
 
        [Test, Category("Smoke")]
-        public void VerifyLogin()
+        public void VerifyLogin3()
         {
             if (testData != null)
             {
