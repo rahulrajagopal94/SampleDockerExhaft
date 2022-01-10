@@ -20,8 +20,6 @@ namespace SampleDocker.Pages
     {
         public static List<string> screenshotList = new List<string>();
         public static JObject jObject;
-        static string firstSection, actualFirstlabel;
-
         public static int importId = 0;
 
         static AddressPage()

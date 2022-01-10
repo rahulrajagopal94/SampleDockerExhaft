@@ -4,6 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\LoginTest.json" />
+    <None Remove="TestData\LoginTest1.json" />
+  </ItemGroup>
 <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
@@ -20,16 +25,24 @@
     <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Ex-haft">
-      <HintPath>bin\Debug\netcoreapp3.1\Ex-haft.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
       <Content Include="Configuration\AppSettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
    </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestData\LoginTest1.json" />
+  </ItemGroup>
 <ItemGroup>
     <Folder Include="Results\Report\ExtentReport\" />
   </ItemGroup>
+<ItemGroup>
+  <Reference Include="Ex-haft">
+    <HintPath>bin\Debug\netcoreapp3.1\Ex-haft.dll</HintPath>
+  </Reference>
+</ItemGroup>
+<ItemGroup>
+  <Resource Include="TestData\LoginTest.json">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Resource>
+</ItemGroup>
 </Project>

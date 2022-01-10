@@ -19,7 +19,6 @@ namespace SampleDocker.Pages
     {
         public static List<string> screenshotList = new List<string>();
         public static JObject jObject;
-        public static string authToken;
 
         static LoginPage()
         {

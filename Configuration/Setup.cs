@@ -28,7 +28,7 @@ namespace SampleDocker.Configuration
 
         public Setup()
         {
-
+            driver = ConfigFile.Init("Configuration/AppSettings.json");
             if (ConfigFile.IsRunFromDriverFile())
             {
                 ConfigureExtentReport();
@@ -56,7 +56,6 @@ namespace SampleDocker.Configuration
             //var options = new ChromeOptions();
             //var remoteUrl = "http://localhost:4444/wd/hub";
             //driver = new RemoteWebDriver(new Uri(remoteUrl), options);
-            driver = ConfigFile.Init("Configuration/AppSettings.json");
             Constant.SetConfig("Configuration/AppSettings.json");
         }
 
