@@ -1,0 +1,8 @@
+{
+  "username": "input-email",
+  "password": "input-password",
+  "loginButton": "//body/div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/input[1]",
+  "myaccount": "//span[contains(text(),'My Account')]",
+  "loginPage": "//a[contains(text(),'Login')]",
+  "verifyLogin": "//*[@id='column-right']/div/a[1]"
+}
