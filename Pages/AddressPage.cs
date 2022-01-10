@@ -51,7 +51,7 @@ namespace SampleDocker.Pages
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Click 'Address Book' button", "").ToString());
 
                 listOfReport.Add(ReusableComponents.GenerateReportSteps("Verify that the address book page is loaded. Capture Screenshot.", "", objective, step));
-                string expectedUrl = "route=account/address";
+                string expectedUrl = "route=account/addressing";
                 string actualUrl = driver.Url;
                 Console.WriteLine(expectedUrl);
                 if(actualUrl.Contains(expectedUrl))
