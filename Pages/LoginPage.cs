@@ -54,8 +54,8 @@ namespace SampleDocker.Pages
                 //reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Click 'Login' button", "").ToString());
 
                 //Enter username
-                listOfReport.Add(ReusableComponents.GenerateReportSteps("Enter username: " + inputjson["username"].ToString(),"", objective, step));
-                ReusableComponents.SendKeys(driver, "Id", "input-email", inputjson["username"].ToString());
+                listOfReport.Add(ReusableComponents.GenerateReportSteps("Enter username: " + "","", objective, step));
+                ReusableComponents.SendKeys(driver, "Id", "input-email", "raahulonline@gmail.com");
                 listOfReport[step++].actualResultFail = "";
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Enter username: "+ inputjson["username"].ToString(),"").ToString());              
 
