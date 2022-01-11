@@ -64,6 +64,7 @@ namespace SampleDocker.Configuration
         public static void Exit()
         {
             //Generate test report
+            driver.Close();
             driver.Quit();
             driver.Dispose();
 
