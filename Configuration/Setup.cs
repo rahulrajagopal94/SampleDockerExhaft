@@ -10,6 +10,7 @@ using Ex_haft.Utilities;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using System;
+using System.Threading;
 
 namespace SampleDocker.Configuration
 {
@@ -64,6 +65,10 @@ namespace SampleDocker.Configuration
         {
             //Generate test report
             driver.Quit();
+            driver.Dispose();
+
+            Thread.Sleep(3000);
+
             Report.WriteResultToHtml(driver, report, screenshotList, testObjective, scriptName);
         }
 
