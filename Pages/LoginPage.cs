@@ -41,7 +41,7 @@ namespace SampleDocker.Pages
             try
             {
 
-                Thread.Sleep(4000);
+                Thread.Sleep(40000);
                 //listOfReport.Add(ReusableComponents.GenerateReportSteps("Click on the My Account button.", "", objective, step));
                 //ReusableComponents.JEClick(driver, "XPath", inputjson["myaccount"].ToString());
                 //listOfReport[step++].actualResultFail = "";
