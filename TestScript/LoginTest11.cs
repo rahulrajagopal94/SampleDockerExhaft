@@ -6,6 +6,8 @@ using SampleDocker.Pages;
 
 namespace SampleDocker.TestScript
 {
+    [TestFixture]
+    [Parallelizable]
     class LoginTest11 : Setup
     {
         
@@ -20,7 +22,7 @@ namespace SampleDocker.TestScript
         }
 
 
-   //    [Test, Category("Smoke")]
+      [Test, Category("Smoke")]
         public void VerifyLogin11()
         {
             if (testData != null)

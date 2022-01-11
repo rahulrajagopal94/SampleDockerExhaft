@@ -346,3 +346,4 @@ C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netco
 C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.dll
 C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.pdb
 C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.genruntimeconfig.cache
+C:\Users\rahul.r\Desktop\VisualStudioProjects\SampleDockerExhaft\obj\Debug\netcoreapp3.1\SampleDocker.csproj.AssemblyReference.cache
