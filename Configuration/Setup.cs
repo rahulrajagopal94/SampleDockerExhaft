@@ -63,6 +63,7 @@ namespace SampleDocker.Configuration
         public static void Exit()
         {
             //Generate test report
+            driver.Dispose();
             driver.Quit();
             Report.WriteResultToHtml(driver, report, screenshotList, testObjective, scriptName);
         }
