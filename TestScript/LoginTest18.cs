@@ -20,7 +20,7 @@ namespace SampleDocker.TestScript
         }
 
 
-       [Test, Category("Smoke")]
+ //      [Test, Category("Smoke")]
         public void VerifyLogin18()
         {
             if (testData != null)
