@@ -7,7 +7,7 @@ using SampleDocker.Pages;
 namespace SampleDocker.TestScript
 {
     [TestFixture]
-    [Parallelizable]
+ //   [Parallelizable]
     class LoginTest14 : Setup
     {
         
