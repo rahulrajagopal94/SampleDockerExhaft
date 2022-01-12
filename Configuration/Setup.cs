@@ -66,7 +66,6 @@ namespace SampleDocker.Configuration
             //Generate test report
             driver.Close();
             driver.Quit();
-            driver.Dispose();
 
             Thread.Sleep(3000);
 
