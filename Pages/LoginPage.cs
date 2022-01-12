@@ -60,7 +60,7 @@ namespace SampleDocker.Pages
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Enter username: "+ inputjson["username"].ToString(),"").ToString());              
 
                 //Enter password
-                listOfReport.Add(ReusableComponents.GenerateReportSteps("Enter password.Capture Screenshot.", "password", objective, step));
+                listOfReport.Add(ReusableComponents.GenerateReportSteps("Enter password.", "password", objective, step));
                 ReusableComponents.SendKeys(driver, "Id", jObject["password"].ToString(), inputjson["password"].ToString());
                 listOfReport[step++].actualResultFail = "";
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Enter password", "").ToString());
@@ -82,10 +82,6 @@ namespace SampleDocker.Pages
             {
                 Console.WriteLine("LoginToApplication failed: " + e);
                 reporter.Fail("LoginToApplication failed");
-                if (!listOfReport[step].GetStepDescription().Contains("Capture Screenshot")==true)
-                {
-                    listOfReport[step].stepDescription = listOfReport[step].stepDescription + ", Capture Screenshot.";
-                }
             }
 
             return listOfReport;

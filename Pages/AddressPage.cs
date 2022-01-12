@@ -48,7 +48,7 @@ namespace SampleDocker.Pages
                 listOfReport[step++].actualResultFail = "";
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Click 'Address Book' button", "").ToString());
 
-                listOfReport.Add(ReusableComponents.GenerateReportSteps("Verify that the address book page is loaded. Capture Screenshot.", "", objective, step));
+                listOfReport.Add(ReusableComponents.GenerateReportSteps("Verify that the address book page is loaded. ", "", objective, step));
                 string expectedUrl = "route=account/addressing";
                 string actualUrl = driver.Url;
                 Console.WriteLine(expectedUrl);
@@ -66,10 +66,7 @@ namespace SampleDocker.Pages
             {
                 Console.WriteLine("Homepage load failed: " + e);
                 reporter.Fail("Verify Home page failed");
-                if (!listOfReport[step].GetStepDescription().Contains("Capture Screenshot") == true)
-                {
-                    listOfReport[step].stepDescription = listOfReport[step].stepDescription + ", Capture Screenshot.";
-                }
+               
             }
             return listOfReport;
         }
