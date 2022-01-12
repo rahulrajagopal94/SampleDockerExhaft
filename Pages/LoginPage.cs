@@ -64,7 +64,6 @@ namespace SampleDocker.Pages
                 ReusableComponents.SendKeys(driver, "Id", jObject["password"].ToString(), inputjson["password"].ToString());
                 listOfReport[step++].actualResultFail = "";
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Enter password", "").ToString());
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "LoginPage" + ConfigFile.GetCurrentDateTime()));
 
                 //Click on the 'Login' button
                 listOfReport.Add(ReusableComponents.GenerateReportSteps("Click on the Login button.", "", objective, step));
@@ -87,7 +86,6 @@ namespace SampleDocker.Pages
                 {
                     listOfReport[step].stepDescription = listOfReport[step].stepDescription + ", Capture Screenshot.";
                 }
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "LoginToApplication" + ConfigFile.GetCurrentDateTime()));
             }
 
             return listOfReport;

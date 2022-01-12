@@ -61,7 +61,6 @@ namespace SampleDocker.Pages
                 {
                     step++;
                 }
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "Homepage" + ConfigFile.GetCurrentDateTime())); ;
             }
             catch (Exception e)
             {
@@ -71,7 +70,6 @@ namespace SampleDocker.Pages
                 {
                     listOfReport[step].stepDescription = listOfReport[step].stepDescription + ", Capture Screenshot.";
                 }
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "VerifyThatHomePageIsLoaded" + ConfigFile.GetCurrentDateTime()));
             }
             return listOfReport;
         }
