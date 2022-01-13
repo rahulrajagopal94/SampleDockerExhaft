@@ -13,15 +13,15 @@ namespace SampleDocker.Configuration
     class Setup
     {
 
-        public static IWebDriver driver;
-        public static ExtentReports extent;
-        public static ExtentHtmlReporter htmlReporter;
-        public static string testObjective;
-        public static string scriptName;
-        public static List<TestReportSteps> report = null;
-        public static JArray testData;
-        public static ExtentTest reporter;
-        public static List<string> screenshotList = new List<string>();
+        public IWebDriver driver;
+        public ExtentReports extent;
+        public ExtentHtmlReporter htmlReporter;
+        public string testObjective;
+        public string scriptName;
+        public List<TestReportSteps> report = null;
+        public JArray testData;
+        public ExtentTest reporter;
+        public List<string> screenshotList = new List<string>();
 
         public Setup()
         {
@@ -51,14 +51,15 @@ namespace SampleDocker.Configuration
         }
 
         [SetUp]
-        public static void BeforeEachTest()
+        public void BeforeEachTest()
         {
-            driver = ConfigFile.Init("Configuration//AppSettings.json");
+            ConfigFile configFile = new ConfigFile();
+            driver = configFile.Init("Configuration//AppSettings.json");
             Constant.SetConfig("Configuration//AppSettings.json");
         }
 
         [TearDown]
-        public static void Exit()
+        public void Exit()
         {
             //Generate test report
             driver.Quit();
@@ -66,7 +67,7 @@ namespace SampleDocker.Configuration
         }
 
         [OneTimeTearDown]
-        public static void GenerateExtentReport()
+        public void GenerateExtentReport()
         {
             extent.Flush();
         }

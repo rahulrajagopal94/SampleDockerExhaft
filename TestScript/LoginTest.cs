@@ -6,9 +6,11 @@ using SampleDocker.Pages;
 
 namespace SampleDocker.TestScript
 {
+    [TestFixture]
+    [Parallelizable]
     class LoginTest : Setup
     {
-        
+    
         public LoginTest() : base()
         {
             testObjective = "To Verify that user is able to login to the web application.";

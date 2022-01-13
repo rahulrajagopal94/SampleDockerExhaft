@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SampleDocker\\SampleDocker\\SampleDocker.csproj": {}
+    "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SeleniumParallel\\SampleDocker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SampleDocker\\SampleDocker\\SampleDocker.csproj": {
+    "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SeleniumParallel\\SampleDocker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SampleDocker\\SampleDocker\\SampleDocker.csproj",
+        "projectUniqueName": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SeleniumParallel\\SampleDocker.csproj",
         "projectName": "SampleDocker",
-        "projectPath": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SampleDocker\\SampleDocker\\SampleDocker.csproj",
+        "projectPath": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SeleniumParallel\\SampleDocker.csproj",
         "packagesPath": "C:\\Users\\rahul.r\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SampleDocker\\SampleDocker\\obj\\",
+        "outputPath": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SeleniumParallel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rahul.r\\AppData\\Roaming\\NuGet\\NuGet.Config",
