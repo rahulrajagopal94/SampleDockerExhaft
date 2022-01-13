@@ -35,7 +35,7 @@ namespace SampleDocker.TestScript
                     foreach (string screenshot in LoginPage.GetLoginPageScreenshots())
                         screenshotList.Add(screenshot);
 
-                    report.AddRange(AddressPage.OpenAddressBook(driver, ref reporter));
+                    report.AddRange(LoginPage.LoginToApplication(driver,input, ref reporter));
                     foreach (string screenshot in AddressPage.GetHomePageScreenshots())
                         screenshotList.Add(screenshot);
                  
