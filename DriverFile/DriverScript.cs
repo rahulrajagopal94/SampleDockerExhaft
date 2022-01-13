@@ -11,7 +11,7 @@ using System.Text;
 
 namespace SampleDocker.DriverFile
 {
-    [TestFixture]
+     //[TestFixture]
     
     
     class DriverScript
