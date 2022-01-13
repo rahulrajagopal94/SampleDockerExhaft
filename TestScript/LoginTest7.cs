@@ -31,11 +31,11 @@ namespace SampleDocker.TestScript
                 {
                     reporter = extent.CreateTest("LoginTest").Info("Login test started");
 
-                    report = LoginPage.LoginToApplication(driver, input, ref reporter);
+                    report = LoginPage.LoginToApplication(scriptName, driver, input, ref reporter);
                     foreach (string screenshot in LoginPage.GetLoginPageScreenshots())
                         screenshotList.Add(screenshot);
 
-                    report.AddRange(AddressPage.OpenAddressBook(driver, ref reporter));
+                    report.AddRange(AddressPage.OpenAddressBook(scriptName, driver, ref reporter));
                     foreach (string screenshot in AddressPage.GetHomePageScreenshots())
                         screenshotList.Add(screenshot);
                  

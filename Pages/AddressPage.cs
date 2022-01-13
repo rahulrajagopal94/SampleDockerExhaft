@@ -34,7 +34,7 @@ namespace SampleDocker.Pages
         /// </summary>
         /// <param name="inputjson">The input json</param>
         /// <returns>Test reports</returns>
-        public static List<TestReportSteps> OpenAddressBook(IWebDriver driver, ref ExtentTest reporter)
+        public static List<TestReportSteps> OpenAddressBook(string scriptName, IWebDriver driver, ref ExtentTest reporter)
         {
             List<TestReportSteps> listOfReport = new List<TestReportSteps>();
             screenshotList.Clear();
@@ -63,7 +63,7 @@ namespace SampleDocker.Pages
                 {
                     step++;
                 }
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "Homepage" + ConfigFile.GetCurrentDateTime())); ;
+                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, scriptName, "Homepage" + ConfigFile.GetCurrentDateTime())); ;
             }
             catch (Exception e)
             {
@@ -73,7 +73,7 @@ namespace SampleDocker.Pages
                 {
                     listOfReport[step].stepDescription = listOfReport[step].stepDescription + ", Capture Screenshot.";
                 }
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "VerifyThatHomePageIsLoaded" + ConfigFile.GetCurrentDateTime()));
+                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, scriptName, "VerifyThatHomePageIsLoaded" + ConfigFile.GetCurrentDateTime()));
             }
             return listOfReport;
         }

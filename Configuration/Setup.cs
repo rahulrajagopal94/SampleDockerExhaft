@@ -10,7 +10,7 @@ using Ex_haft.Utilities;
 
 namespace SampleDocker.Configuration
 {
-    class Setup
+    public class Setup
     {
 
         public IWebDriver driver;

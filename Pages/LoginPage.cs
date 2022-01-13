@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using RestSharp.Serialization.Json;
 using System.Threading;
 
+
 namespace SampleDocker.Pages
 {
 
@@ -32,7 +33,7 @@ namespace SampleDocker.Pages
         /// </summary>
         /// <param name="inputjson">The input json</param>
         /// <returns>Test reports</returns>
-        public static List<TestReportSteps> LoginToApplication(IWebDriver driver, JToken inputjson, ref ExtentTest reporter)
+        public static List<TestReportSteps> LoginToApplication(string scriptName,IWebDriver driver, JToken inputjson, ref ExtentTest reporter)
         {
             List<TestReportSteps> listOfReport = new List<TestReportSteps>();
             screenshotList.Clear();
@@ -65,7 +66,7 @@ namespace SampleDocker.Pages
                 ReusableComponents.SendKeys(driver, "Id", jObject["password"].ToString(), inputjson["password"].ToString());
                 listOfReport[step++].actualResultFail = "";
                 reporter.Log(Status.Pass, ReusableComponents.GenerateExtendReportSteps("Enter password", "").ToString());
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "LoginPage" + ConfigFile.GetCurrentDateTime()));
+                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, scriptName, "LoginPage" + ConfigFile.GetCurrentDateTime()));
 
                 //Click on the 'Login' button
                 listOfReport.Add(ReusableComponents.GenerateReportSteps("Click on the Login button.", "", objective, step));
@@ -88,7 +89,7 @@ namespace SampleDocker.Pages
                 {
                     listOfReport[step].stepDescription = listOfReport[step].stepDescription + ", Capture Screenshot.";
                 }
-                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, "LoginToApplication" + ConfigFile.GetCurrentDateTime()));
+                screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, scriptName, "LoginToApplication" + ConfigFile.GetCurrentDateTime()));
             }
 
             return listOfReport;
