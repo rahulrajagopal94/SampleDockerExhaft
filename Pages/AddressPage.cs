@@ -18,9 +18,7 @@ namespace SampleDocker.Pages
 {
     class AddressPage
     {
-        public static List<string> screenshotList = new List<string>();
         public static JObject jObject;
-        static string firstSection, actualFirstlabel;
 
         public static int importId = 0;
 
@@ -34,10 +32,11 @@ namespace SampleDocker.Pages
         /// </summary>
         /// <param name="inputjson">The input json</param>
         /// <returns>Test reports</returns>
-        public static List<TestReportSteps> OpenAddressBook(string scriptName, IWebDriver driver, ref ExtentTest reporter)
+        public static (List<TestReportSteps>, List<string>) OpenAddressBook(string scriptName, IWebDriver driver, ref ExtentTest reporter)
         {
             List<TestReportSteps> listOfReport = new List<TestReportSteps>();
-            screenshotList.Clear();
+            List<string> screenshotList = new List<string>();
+
             int step = 0;
             string objective = "To verify that Address Book page is loaded.";
 
@@ -75,20 +74,20 @@ namespace SampleDocker.Pages
                 }
                 screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, scriptName, "VerifyThatHomePageIsLoaded" + ConfigFile.GetCurrentDateTime()));
             }
-            return listOfReport;
+            return (listOfReport, screenshotList);
         }
 
 
-   
 
-        /// <summary>
-        /// Retrieve list of screenshots captured
-        /// </summary>
-        /// <returns></returns>
-        public static List<string> GetHomePageScreenshots()
-        {
-            List<string> result = screenshotList;
-            return result;
-        }
+
+        ///// <summary>
+        ///// Retrieve list of screenshots captured
+        ///// </summary>
+        ///// <returns></returns>
+        //public static List<string> GetHomePageScreenshots()
+        //{
+        //    List<string> result = screenshotList;
+        //    return result;
+        //}
     }
 }

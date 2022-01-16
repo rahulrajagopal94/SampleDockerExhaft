@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using OpenQA.Selenium;
 using Ex_haft.Configuration;
 using Ex_haft.Utilities;
+using System;
 
 namespace SampleDocker.Configuration
 {
@@ -19,6 +20,7 @@ namespace SampleDocker.Configuration
         public string testObjective;
         public string scriptName;
         public List<TestReportSteps> report = null;
+        public (List<TestReportSteps>, List<string>) artifacts;
         public JArray testData;
         public ExtentTest reporter;
         public List<string> screenshotList = new List<string>();
@@ -63,6 +65,8 @@ namespace SampleDocker.Configuration
         {
             //Generate test report
             driver.Quit();
+            Console.WriteLine(scriptName + "-" + screenshotList.Count + "-" + report.Count);
+            screenshotList.ForEach(Console.WriteLine);
             Report.WriteResultToHtml(driver, report, screenshotList, testObjective, scriptName);
         }
 

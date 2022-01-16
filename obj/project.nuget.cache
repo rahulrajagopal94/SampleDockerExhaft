@@ -1,14 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aZOmrWoXvm59Hcyj1xHorJN406QQDC4TPjr1y4LtEHyQM63cYVyyFRmeL4pFD1uGNu0fhdgrPmOT5jpeZnaw/Q==",
+  "dgSpecHash": "VAiSIC/i4WZ1b5AIEoIuXhezTtgZmVv3q0K3q/qnHeh3CRnwQSE/3JgUyWlbgHIR1kZP2IykiExnfcdflawAWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rahul.r\\Desktop\\SeleniumGrid\\SeleniumParallel\\SampleDocker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rahul.r\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\dnsclient\\1.2.0\\dnsclient.1.2.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\extentreports\\4.1.0\\extentreports.4.1.0.nupkg.sha512",
-    "C:\\Users\\rahul.r\\.nuget\\packages\\extentreports.signed\\3.1.3\\extentreports.signed.3.1.3.nupkg.sha512",
-    "C:\\Users\\rahul.r\\.nuget\\packages\\htmlagilitypack\\1.4.9.5\\htmlagilitypack.1.4.9.5.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -79,18 +77,14 @@
     "C:\\Users\\rahul.r\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.bson\\2.10.0\\mongodb.bson.2.10.0.nupkg.sha512",
-    "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.bson.signed\\2.4.0\\mongodb.bson.signed.2.4.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.driver\\2.10.0\\mongodb.driver.2.10.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.driver.core\\2.10.0\\mongodb.driver.core.2.10.0.nupkg.sha512",
-    "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.driver.core.signed\\2.4.0\\mongodb.driver.core.signed.2.4.0.nupkg.sha512",
-    "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.driver.signed\\2.4.0\\mongodb.driver.signed.2.4.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\mongodb.libmongocrypt\\1.0.0\\mongodb.libmongocrypt.1.0.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\nunit\\3.13.1\\nunit.3.13.1.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\nunit3testadapter\\3.17.0\\nunit3testadapter.3.17.0.nupkg.sha512",
-    "C:\\Users\\rahul.r\\.nuget\\packages\\razorengine\\3.9.0\\razorengine.3.9.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\razorengine.netcore\\2.2.6\\razorengine.netcore.2.2.6.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -202,76 +196,5 @@
     "C:\\Users\\rahul.r\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\rahul.r\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "ExtentReports.signed 3.1.3 depends on MongoDB.Bson.signed (>= 2.3.0.157) but MongoDB.Bson.signed 2.3.0.157 was not found. An approximate best match of MongoDB.Bson.signed 2.4.0 was resolved.",
-      "libraryId": "MongoDB.Bson.signed",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "ExtentReports.signed 3.1.3 depends on MongoDB.Driver.Core.signed (>= 2.3.0.157) but MongoDB.Driver.Core.signed 2.3.0.157 was not found. An approximate best match of MongoDB.Driver.Core.signed 2.4.0 was resolved.",
-      "libraryId": "MongoDB.Driver.Core.signed",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "ExtentReports.signed 3.1.3 depends on MongoDB.Driver.signed (>= 2.3.0.157) but MongoDB.Driver.signed 2.3.0.157 was not found. An approximate best match of MongoDB.Driver.signed 2.4.0 was resolved.",
-      "libraryId": "MongoDB.Driver.signed",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "ExtentReports.signed 3.1.3 depends on Newtonsoft.Json (>= 9.0.0) but Newtonsoft.Json 9.0.0 was not found. An approximate best match of Newtonsoft.Json 9.0.1 was resolved.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ExtentReports.signed 3.1.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "ExtentReports.signed",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'HtmlAgilityPack 1.4.9.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "HtmlAgilityPack",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'RazorEngine 3.9.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "RazorEngine",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

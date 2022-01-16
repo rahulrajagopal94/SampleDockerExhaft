@@ -192,7 +192,6 @@ C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\S
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\SampleDocker.pdb
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\DnsClient.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\ExtentReports.dll
-C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Core.dll
@@ -266,7 +265,6 @@ C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\M
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\nunit.framework.dll
-C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\RazorEngine.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\RazorEngine.NetCore.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\RestSharp.dll
 C:\Users\rahul.r\Desktop\SeleniumGrid\SeleniumParallel\bin\Debug\netcoreapp3.1\WebDriver.dll

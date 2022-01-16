@@ -14,7 +14,7 @@ namespace SampleDocker.TestScript
         public LoginTest() : base()
         {
             testObjective = "To Verify that user is able to login to the web application.";
-            scriptName = "Login to Application";
+            scriptName = "TestScript";
             testData = ConfigFile.RetrieveInputTestData("LoginTest.json");
 
             if (ConfigFile.IsRunFromDriverFile())
@@ -29,14 +29,17 @@ namespace SampleDocker.TestScript
             {
                 foreach (var input in testData)
                 {
+                    screenshotList.Clear();
                     reporter = extent.CreateTest("LoginTest").Info("Login test started");
 
-                    report = LoginPage.LoginToApplication(scriptName, driver, input, ref reporter);
-                    foreach (string screenshot in LoginPage.GetLoginPageScreenshots())
+                    artifacts = LoginPage.LoginToApplication(scriptName, driver, input, ref reporter);
+                    report = artifacts.Item1;
+                    foreach (string screenshot in artifacts.Item2)
                         screenshotList.Add(screenshot);
 
-                    report.AddRange(AddressPage.OpenAddressBook(scriptName, driver, ref reporter));
-                    foreach (string screenshot in AddressPage.GetHomePageScreenshots())
+                    artifacts = AddressPage.OpenAddressBook(scriptName, driver, ref reporter);
+                    report.AddRange(artifacts.Item1);
+                    foreach (string screenshot in artifacts.Item2)
                         screenshotList.Add(screenshot);
                  
                     reporter.Info("Login test finished");

@@ -18,9 +18,7 @@ namespace SampleDocker.Pages
 
     class LoginPage
     {
-        public static List<string> screenshotList = new List<string>();
         public static JObject jObject;
-        public static string authToken;
 
         static LoginPage()
         {
@@ -33,10 +31,10 @@ namespace SampleDocker.Pages
         /// </summary>
         /// <param name="inputjson">The input json</param>
         /// <returns>Test reports</returns>
-        public static List<TestReportSteps> LoginToApplication(string scriptName,IWebDriver driver, JToken inputjson, ref ExtentTest reporter)
+        public static ( List<TestReportSteps>,List<string>) LoginToApplication(string scriptName,IWebDriver driver, JToken inputjson, ref ExtentTest reporter)
         {
             List<TestReportSteps> listOfReport = new List<TestReportSteps>();
-            screenshotList.Clear();
+            List<string> screenshotList = new List<string>();
             int step = 0;
             string objective = "To verify that user is able to login to the application";
             
@@ -92,17 +90,17 @@ namespace SampleDocker.Pages
                 screenshotList.Add(CaptureScreenshot.TakeSingleSnapShot(driver, scriptName, "LoginToApplication" + ConfigFile.GetCurrentDateTime()));
             }
 
-            return listOfReport;
+            return (listOfReport,screenshotList);
         }
 
-        /// <summary>
-        /// Retrieve list of screenshots captured
-        /// </summary>
-        /// <returns></returns>
-        public static List<string> GetLoginPageScreenshots()
-        {
-            List<string> result = screenshotList;
-            return result;
-        }
+        ///// <summary>
+        ///// Retrieve list of screenshots captured
+        ///// </summary>
+        ///// <returns></returns>
+        //public static List<string> GetLoginPageScreenshots()
+        //{
+        //    List<string> result = screenshotList;
+        //    return result;
+        //}
     }
 }
